@@ -1,2 +1,6 @@
 # EE8230-Final-Project--Nikol-Kreimer
 Parkinson's Telemonitoring Regression Model
+Abstract:
+This project investigates the use of acoustic voice features to estimate the clinician-rated total Unified Parkinson’s Disease Rating Scale (total_UPDRS) using machine learning regression models. After preprocessing the Parkinsons_UPDRS dataset and removing features that introduce data leakage or confounding effects such as motor_UPDRS , subject#, and age the model was trained exclusively on physiologically relevant voice measures (jitter, shimmer, NHR, HNR, RPDE, DFA, PPE) and test time. Feature types were categorized as numerical or categorical, and the data was standardized and evaluated using PyCaret’s regression module. Multiple algorithms were compared using R², MAE, RMSE, and to assess predictive performance. The Extra Trees Regressor emerged as the best model, achieving the highest R² and the lowest error values across all major metrics, indicating strong predictive capability relative to the other methods tested. These findings support the potential of machine-learning models trained on noninvasive voice biomarkers to assist in tracking Parkinson’s disease progression, while also highlighting the importance of careful feature selection to avoid misleading model performance.
+
+Youtube Link: https://youtu.be/pi40L4BJvn8
